@@ -13,7 +13,7 @@ class person_player
 
     private:
         unsigned short attributeOne, attributeTwo, attributeThree, attributeFour, attributeFive, attributeSix, attributeSeven, attributeEight, attributeNine, attributeTen,
-                            personID, teamID, gameID, roleID, nationality, currentAbility, potentialAbility, reputation, age, dateOfBirth;
+                            personID, teamID, gameID, roleID, nationality, currentAbility, potentialAbility, reputation, age, dateOfBirth; //Epoch for age and DOB: January 1 1985 = 0, January 2 1985 = 2 etc.
         std::string nameFirst, nameLast, nameMiddle, namePseudo, mediaDescription, biography;
         long salary;
 
