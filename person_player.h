@@ -12,9 +12,18 @@ class person_player
     protected:
 
     private:
-        unsigned short int attributeOne, attributeTwo, attributeThree, attributeFour, attributeFive, attributeSix, attributeSeven, attributeEight, attributeNine, attributeTen,
-                            personID, teamID, nationality, currentAbility, potentialAbility, reputation;
+        unsigned short attributeOne, attributeTwo, attributeThree, attributeFour, attributeFive, attributeSix, attributeSeven, attributeEight, attributeNine, attributeTen,
+                            personID, teamID, gameID, roleID, nationality, currentAbility, potentialAbility, reputation, age, dateOfBirth;
         std::string nameFirst, nameLast, nameMiddle, namePseudo, mediaDescription, biography;
+        long salary;
+
+        void generateAttribute();
+        void generateAbilities();
+        void updateAbility();
+        void updateAttributes();
+        void generateNationality();
+        void generateNames();
+        void updateReputation();
 };
 
 #endif // PERSON_PLAYER_H
