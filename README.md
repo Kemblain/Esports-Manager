@@ -3,6 +3,7 @@ Well this file is just for me to learn how to use github, I guess.
 
 Writing my own engine in c++, using SDL. No idea what else yet, that's as far as I've gotten.
 I intend to write, in this order:
+
     player class
         player generation functions -> requires a name, ethnicity, nationality library to generate
         player history recording
