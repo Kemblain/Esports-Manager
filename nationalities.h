@@ -9,6 +9,7 @@ class nationalities
         nationalities();
         virtual ~nationalities();
         static struct genericNatInfo nationalityInformation [8];
+        void establishNatInfo();
 
     protected:
 

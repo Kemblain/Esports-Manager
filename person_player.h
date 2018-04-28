@@ -8,7 +8,7 @@ class person_player
         person_player();
         virtual ~person_player();
         std::string to_string();
-        int getAge(unsigned short dateOfBirth);
+        int getAge(int currentDate);
 
     protected:
 
