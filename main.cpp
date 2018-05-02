@@ -1,7 +1,6 @@
 #include <cstdlib>
 #include <SDL/SDL.h>
 #include <person_player.h>
-#include <nationalities.h>
 
 int main ( int argc, char** argv )
 {

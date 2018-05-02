@@ -9,6 +9,9 @@ class person_player
         virtual ~person_player();
         std::string to_string();
         int getAge(int currentDate);
+        void establishNatInfo();
+        void buildPlayerInfo();                 // Completely random player generation
+        void buildPlayerInfo(int nationality);  // Player generation with a specific nationality
 
     protected:
 
@@ -30,6 +33,25 @@ class person_player
         void updateReputation();
 
         int randConvert(int inputNumber);
+
+        /* NATIONALITY INFORMATION */
+        const int NUMBER_OF_NATIONS = 8;
+        struct genericNatInfo
+        {
+            std::string name;
+            std::string demonym;
+            short natID;
+            short mobaPercent;
+            short royalePercent;
+            short shooterPercent;
+            short fighterPercent;
+            short strategyPercent;
+            short genCA;
+            short genCADev;
+            short genPA;
+            short genPADev;
+        };
+        static struct genericNatInfo nationalityInformation [NUMBER_OF_NATIONS];
 };
 
 #endif // PERSON_PLAYER_H
