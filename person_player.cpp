@@ -1,5 +1,8 @@
 #include "person_player.h"
 
+const int person_player::NUMBER_OF_NATIONS = 8;
+genericNatInfo person_player::nationalityInformation[person_player::NUMBER_OF_NATIONS];
+
 person_player::person_player()
 {
 
@@ -14,7 +17,7 @@ void person_player::generateNationality()
     nationality = randConvert(randomNum);
 }
 
-int randConvert(int inputNumber)
+int person_player::randConvert(int inputNumber)
 {
     if (inputNumber < 9999)
         return 0; // Brazil
@@ -34,9 +37,8 @@ int randConvert(int inputNumber)
         return 7; // USA
 }
 
-static void establishNatInfo()
+void person_player::establishNatInfo()
 {
-
 
     /*     BRAZIL INFO     */
     nationalityInformation[0].name              = "Brazil";
