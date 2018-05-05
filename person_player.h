@@ -1,15 +1,15 @@
-#ifndef PERSON_PLAYER_H
-#define PERSON_PLAYER_H
 #include <string>
+#include <iostream>
+#include <random>
+#include <time.h>
 
 class person_player
 {
     public:
         person_player();
-        virtual ~person_player();
         std::string to_string();
         int getAge(int currentDate);
-        void establishNatInfo();
+        static void establishNatInfo();
         void buildPlayerInfo();                 // Completely random player generation
         void buildPlayerInfo(int nationality);  // Player generation with a specific nationality
 
@@ -35,7 +35,6 @@ class person_player
         int randConvert(int inputNumber);
 
         /* NATIONALITY INFORMATION */
-        const int NUMBER_OF_NATIONS = 8;
         struct genericNatInfo
         {
             std::string name;
@@ -51,7 +50,6 @@ class person_player
             short genPA;
             short genPADev;
         };
-        static struct genericNatInfo nationalityInformation [NUMBER_OF_NATIONS];
+        static const int NUMBER_OF_NATIONS;
+        static genericNatInfo nationalityInformation[];
 };
-
-#endif // PERSON_PLAYER_H

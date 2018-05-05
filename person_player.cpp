@@ -1,15 +1,6 @@
 #include "person_player.h"
-#include <string>
-#include <iostream>
-#include <random>
-#include <time.h>
 
 person_player::person_player()
-{
-
-}
-
-person_player::~person_player()
 {
 
 }
@@ -43,8 +34,10 @@ int randConvert(int inputNumber)
         return 7; // USA
 }
 
-void establishNatInfo()
+static void establishNatInfo()
 {
+
+
     /*     BRAZIL INFO     */
     nationalityInformation[0].name              = "Brazil";
     nationalityInformation[0].demonym           = "Brazilian";
